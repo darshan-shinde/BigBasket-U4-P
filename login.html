@@ -146,7 +146,7 @@
 
                 <h3>LOGIN</h3>
             </div>
-            <form action="" id="form">
+            <form action="" id="form" onsubmit ="login(event)">
                 <!-- <label for="">E</label> -->
                 <input id="email" type="email" placeholder="USERNAME" /><br>
         ​
@@ -165,31 +165,69 @@
   </body>
 </html>
 <script>
-  document.getElementById("form").addEventListener("submit", signIn);
-  var regUser = JSON.parse(localStorage.getItem("user")) || [];
-  function signIn(e) {
-    e.preventDefault();
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
+  // document.getElementById("form").addEventListener("submit", signIn);
+  // var regUser = JSON.parse(localStorage.getItem("user")) || [];
+  // function signIn(e) {
+  //   e.preventDefault();
+  //   var email = document.getElementById("email").value;
+  //   var password = document.getElementById("password").value;
 
-    if (!email || !password) {
-      alert("Enter All of the details");
-    } else {
-      for (var i = 0; i < regUser.length; i++) {
-        if (regUser[i].email === email && regUser[i].password === password) {
-          alert("Signin Sucessfully");
-          window.location.href = "index.html";
-          //   "file:///D:/Masai%20Codes/Day-15/E-commerce/products.html";
-          return;
-        } else if (email == "admin@gmail.com" && password == "admin") {
-          alert("Admin Signin Sucessfully");
-          //redirect admin page
-          window.location.href = "admin.html";
-          //   "file:///D:/Masai%20Codes/Day-15/E-commerce/form.html";
-          return;
-        }
-      }
-      alert("Wrong Credintial");
-    }
+  //   if (!email || !password) {
+  //     alert("Enter All of the details");
+  //   } else {
+  //     for (var i = 0; i < regUser.length; i++) {
+  //       if (regUser[i].email === email && regUser[i].password === password) {
+  //         alert("Signin Sucessfully");
+  //         window.location.href = "index.html";
+  //         //   "file:///D:/Masai%20Codes/Day-15/E-commerce/products.html";
+  //         return;
+  //       } else if (email == "admin@gmail.com" && password == "admin") {
+  //         alert("Admin Signin Sucessfully");
+  //         //redirect admin page
+  //         window.location.href = "admin.html";
+  //         //   "file:///D:/Masai%20Codes/Day-15/E-commerce/form.html";
+  //         return;
+  //       }
+  //     }
+  //     alert("Wrong Credintial");
+  //   }
+  // }
+  async function login(e){
+
+e.preventDefault();
+
+try{
+  var login_data = {
+    email:document.getElementById("email").value,
+    password:document.getElementById("password").value,
   }
+
+  login_data =JSON.stringify(login_data);
+
+  let res = await fetch("https://project-bigbasket-login-singup.herokuapp.com/login",{
+    method: 'POST',
+    body:login_data,
+    headers: {
+      "Content-Type":"application/json"
+    },
+  });
+
+  let data = await res.json();
+  console.log(data)
+  if (data.message) {
+    alert("wrong email or password please check again")
+  }
+  else {
+    alert("login successfully")
+    window.location.href = "index.html"
+  }
+
+  // window.location.href = "index.html"
+
+
+}catch(err){
+  return console.log({err:"error coming from login page"});
+}
+}
+
 </script>

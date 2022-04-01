@@ -144,7 +144,7 @@
       <div id="head">
         <h3>SIGN UP</h3>
       </div>
-      <form action="" id="form">
+      <form action="" id="form" onsubmit="register(event)">
         <!-- <label for="">Email</label> -->
         <input id="email" type="email" placeholder="Enter Email" /><br />
 
@@ -177,28 +177,62 @@
   </body>
 </html>
 <script>
-  document.getElementById("form").addEventListener("submit", userList);
-  var arr = JSON.parse(localStorage.getItem("user")) || [];
+  // document.getElementById("form").addEventListener("submit", userList);
+  // var arr = JSON.parse(localStorage.getItem("user")) || [];
 
-  function userList(e) {
-    e.preventDefault();
-    console.log("clicked");
+  // function userList(e) {
+  //   e.preventDefault();
+  //   console.log("clicked");
 
-    var email = document.getElementById("email").value;
-    var mobile = document.getElementById("mobile").value;
-    var password = document.getElementById("password").value;
-    if (!email || !mobile || !password) {
-      alert("Enter all of the details");
-    } else {
-      var userObj = {
-        email: email,
-        mobile: mobile,
-        password: password,
-      };
-      arr.push(userObj);
-      localStorage.setItem("user", JSON.stringify(arr));
+  //   var email = document.getElementById("email").value;
+  //   var mobile = document.getElementById("mobile").value;
+  //   var password = document.getElementById("password").value;
+  //   if (!email || !mobile || !password) {
+  //     alert("Enter all of the details");
+  //   } else {
+  //     var userObj = {
+  //       email: email,
+  //       mobile: mobile,
+  //       password: password,
+  //     };
+  //     arr.push(userObj);
+  //     localStorage.setItem("user", JSON.stringify(arr));
+  //     alert("Sign Up Successful!");
+  //     window.location.href = "login.html";
+  //   }
+  // }
+
+  async function register(event) {
+    event.preventDefault()
+		try {
+			  var log_data = {
+				email: document.getElementById('email').value,
+				mobileNumber: document.getElementById('mobile').value,
+				password: document.getElementById('password').value,
+			};
+			log_data = JSON.stringify(log_data);
+      console.log("register_data",log_data)
+      
+      let res = await fetch("https://project-bigbasket-login-singup.herokuapp.com/register",{
+        method: 'POST',
+        body:log_data,
+        headers: {
+          "Content-Type":"application/json"
+        },
+      });
+
+      let data = await res.json();
+      console.log("data:",data)
       alert("Sign Up Successful!");
-      window.location.href = "login.html";
-    }
-  }
+
+      
+    }catch(err){
+      return console.log({err:"error from async function register"})
+    } 
+    
+    window.location.href = "login.html"
+
+			
+	}
+
 </script>
