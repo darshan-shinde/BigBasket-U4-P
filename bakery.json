@@ -1,0 +1,97 @@
+
+
+     {
+     
+    "bakery1": {
+    "image":"https://www.bigbasket.com/media/uploads/p/s/40149829_4-heritage-total-curd.jpg",
+    "name":"Total Curd",
+    "price":20,
+    "mrp":25
+    },
+    "bakery2":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/264679_3-milky-mist-paneer-premium-fresh.jpg",
+      "name":"Paneer",
+      "price":75,
+      "mrp":80
+    },
+    "bakery3":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/242671_1-nandini-goodlife-toned-milk.jpg",
+      "name":"Goodlife - Toned Milk",
+      "price":45,
+      "mrp":50
+    },
+    "bakery4": {
+      "image":"https://www.bigbasket.com/media/uploads/p/s/1204991_3-amul-butter-pasteurized.jpg",
+      "name":"Butter - Pasteurized",
+      "price":151,
+      "mrp":180
+    },
+    "bakery5":{
+     "image":"https://www.bigbasket.com/media/uploads/p/s/1204360_1-fresho-bread-whole-wheat-chemical-free-400g-eggs-table-tray-30pcs.jpg",
+      "name":"Bread",
+      "price":35,
+      "mrp":40
+    },
+    "bakery6": {
+      "image":"https://www.bigbasket.com/media/uploads/p/s/40025355_6-fresho-whole-wheat-bread-safe-preservative-free.jpg",
+      "name":"Whole Wheat Bread - Safe, Preservative Free",
+      "price":45,
+      "mrp":50
+    },
+    "bakery7":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/1202761_2-amul-cheese-slices.jpg",
+      "name":"amul-cheese-slices",
+      "price":65,
+        "mrp":80
+    },
+    "bakery8":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/40137716_10-id-natural-paneer.jpg",
+      "name":"natural-paneer",
+      "price":100,
+        "mrp":120
+    },
+    "bakery9":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/1207078_2-amul-masti-buttermilk-spice.jpg",
+      "name":"masti-buttermilk",
+      "price":15,
+        "mrp":20
+    },
+    "bakery10": {
+      "image":"https://www.bigbasket.com/media/uploads/p/s/40087525_4-fresho-sandwich-bread-safe-preservative-free.jpg",
+      "name":"sandwich-bread",
+      "price":60,
+        "mrp":70
+    },
+    "bakery11": {
+      "image":"https://www.bigbasket.com/media/uploads/p/s/1202753_1-amul-lactose-free-milk.jpg",
+      "name":"amul-lactose",
+      "price":"75",
+        "mrp":"80"
+    },
+    "bakery12": {
+      "image":"https://www.bigbasket.com/media/uploads/p/s/279588_6-amul-malai-paneer.jpg",
+      "name":"malai-paneer",
+      "price":71,
+      "mrp":80
+    },
+    "bakery13": {
+      "image":"https://www.bigbasket.com/media/uploads/p/s/40025357_4-fresho-pav-safe-preservative-free.jpg",
+      "name":"pav-safe",
+      "price":35,
+        "mrp":45
+    },
+    "bakery14": {
+      "image":"https://www.bigbasket.com/media/uploads/p/mm/270620_4-nandini-paneer.jpg",
+      "name":"nandini-paneer",
+      "price":75,
+        "mrp":80
+    },
+    "bakery15": {
+      "image":"https://www.bigbasket.com/media/uploads/p/mm/104615_8-amul-processed-cheese-cubes.jpg",
+      "name":"processed-cheese",
+      "price":55,
+        "mrp":60
+    }
+
+}
+

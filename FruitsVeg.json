@@ -1,0 +1,96 @@
+{
+    "veg1": {
+        "image":"https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
+        "name":"Onion",
+        "price":"51",
+        "mrp":"80"
+    },
+    "veg2":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/10000204_16-fresho-tomato-local.jpg",
+      "name":"Tomato",
+      "price":"40",
+      "mrp":"60"
+    },
+    "veg3":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/10000144_13-fresho-ladies-finger.jpg",
+      "name":"Ladies Finger",
+      "price":"60",
+      "mrp":"80"
+    },
+    "veg4":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/10000071_14-fresho-carrot-orange.jpg",
+      "name":"Carrot",
+      "price":"80",
+      "mrp":"100"
+    },
+    "veg5":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
+      "name":"Cauliflower",
+      "price":"55",
+      "mrp":"85"
+    },
+    "veg6":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/10000283_11-fresho-green-peas.jpg",
+      "name":"Green Peas",
+      "price":"40",
+      "mrp":"65"
+    },
+    "veg7":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/40057966_2-fresho-tender-coconut-medium.jpg",
+      "name":"Tender Coconut",
+      "price":"30",
+      "mrp":"50"
+    },
+    "veg8":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/10000103_16-fresho-cucumber.jpg",
+      "name":"Cucumber",
+      "price":"20",
+      "mrp":"30"
+    },
+    "veg9":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/10000188_12-fresho-palak-cleaned-without-roots.jpg",
+      "name":"Palak - Cleaned",
+      "price":"25",
+      "mrp":"30"
+
+    },
+    "veg10":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/10000031_21-fresho-banana-yelakki.jpg",
+      "name":"Banana",
+      "price":"30",
+      "mrp":"40"
+    },
+    "veg11":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/40048457_7-fresho-potato-new-crop.jpg",
+      "name":"Potato",
+      "price":"20",
+      "mrp":"30"
+    },
+    "veg12":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/10000063_20-fresho-broccoli.jpg",
+      "name":"Broccoli",
+      "price":"100",
+      "mrp":"180"
+    },
+    "veg13":{
+      "image":"https://www.bigbasket.com/media/uploads/p/mm/10000104_17-fresho-curry-leaves.jpg",
+      "name":"Curry Leaves",
+      "price":"10",
+      "mrp":"20"
+    },
+    "veg14":{
+      "image":"https://www.bigbasket.com/media/uploads/p/s/10000333_14-fresho-chilli-green-long-medium.jpg",
+      "name":"Chilli",
+      "price":"30",
+      "mrp":"50"
+    },
+    "veg15":{
+      "image":"https://www.bigbasket.com/media/uploads/p/mm/40004992_14-fresho-sweet-corn.jpg",
+      "name":"Sweat Corn",
+      "price":"25",
+      "mrp":"35"
+    }
+
+}
+      
+ 
